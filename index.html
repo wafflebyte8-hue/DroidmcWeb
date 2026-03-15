@@ -1,143 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DroidMC</title>
-  <meta name="description" content="DroidMC lets you run and manage a Minecraft server on Android through Termux. Pick stable or beta, watch setup guides, and jump to the repos.">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="page-shell">
-    <header class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Android Minecraft Server Panel</p>
-        <h1>DroidMC</h1>
-        <p class="lede">
-          Run and manage a Minecraft server directly from your Android phone through Termux.
-          Choose the slower stable track or the faster beta track, then install with one command.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#channels">Choose a Channel</a>
-          <a class="button secondary" href="#videos">Watch Tutorials</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DroidMC</title>
+    <meta
+      name="description"
+      content="DroidMC lets you run and manage a Minecraft server on Android through Termux. Pick stable or beta, watch setup guides, and jump to the repos."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Android Minecraft Server Panel</p>
+          <h1>DroidMC</h1>
+          <p class="lede">
+            Run and manage a Minecraft server directly from your Android phone
+            through Termux. Choose the slower stable track or the faster beta
+            track, then install with one command.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#channels">Choose a Channel</a>
+            <a class="button secondary" href="#videos">Watch Tutorials</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-card">
-        <img src="image.png" alt="DroidMC interface screenshot">
-      </div>
-    </header>
-
-    <main>
-      <section class="quick-grid">
-        <article class="info-card">
-          <h2>What It Does</h2>
-          <p>Server control, live console, downloads, backups, crash recovery, auth, HTTPS, and mobile-friendly management from a browser on the same WiFi.</p>
-        </article>
-        <article class="info-card">
-          <h2>Who It Is For</h2>
-          <p>People who want a lightweight Minecraft server panel on Android using Termux without setting up a full VPS or desktop host.</p>
-        </article>
-        <article class="info-card">
-          <h2>How This Site Helps</h2>
-          <p>Use this page as the hub for stable installs, beta installs, tutorial videos, and direct links to the GitHub repos.</p>
-        </article>
-      </section>
-
-      <section id="channels" class="channel-section">
-        <div class="section-heading">
-          <p class="eyebrow">Channels</p>
-          <h2>Pick Your Release Track</h2>
+        <div class="hero-card">
+          <img src="image.png" alt="DroidMC interface screenshot" />
         </div>
+      </header>
 
-        <div class="channel-grid">
-          <article class="channel-card stable">
-            <div class="channel-top">
-              <span class="pill">Stable</span>
-              <h3>Stable Release</h3>
-              <p>Slower updates, cleaner promotion path, better for normal users who do not want frequent changes.</p>
-            </div>
-            <div class="command-block">
-              <span class="command-label">Install in Termux</span>
-              <code>curl -fsSL https://raw.githubusercontent.com/loaf1ms/DroidMC/main/setup.sh -o setup.sh
-bash setup.sh</code>
-            </div>
-            <div class="link-row">
-              <a class="button primary" href="https://github.com/loaf1ms/DroidMC" target="_blank" rel="noreferrer">Open Stable Repo</a>
-            </div>
+      <main>
+        <section class="quick-grid">
+          <article class="info-card">
+            <h2>What It Does</h2>
+            <p>
+              Server control, live console, downloads, backups, crash recovery,
+              auth, HTTPS, and mobile-friendly management from a browser on the
+              same WiFi.
+            </p>
           </article>
-
-          <article class="channel-card beta">
-            <div class="channel-top">
-              <span class="pill">Beta</span>
-              <h3>Beta Release</h3>
-              <p>Faster updates, new features first, active testing, and the place where fixes land before promotion to stable.</p>
-            </div>
-            <div class="command-block">
-              <span class="command-label">Install in Termux</span>
-              <code>curl -fsSL https://raw.githubusercontent.com/wafflebyte8-hue/Droidmc-Beta/main/setup.sh -o setup.sh
-bash setup.sh</code>
-            </div>
-            <div class="link-row">
-              <a class="button primary" href="https://github.com/wafflebyte8-hue/Droidmc-Beta" target="_blank" rel="noreferrer">Open Beta Repo</a>
-            </div>
+          <article class="info-card">
+            <h2>Who It Is For</h2>
+            <p>
+              People who want a lightweight Minecraft server panel on Android
+              using Termux without setting up a full VPS or desktop host.
+            </p>
           </article>
-        </div>
-      </section>
-
-      <section id="videos" class="tutorial-section">
-        <div class="section-heading">
-          <p class="eyebrow">Tutorials</p>
-          <h2>Instruction Videos</h2>
-        </div>
-
-        <div class="tutorial-grid">
-          <article class="tutorial-card">
-            <h3>Stable Install Guide</h3>
-            <p>Use this slot for your stable setup video or walkthrough.</p>
-            <a class="button secondary" href="#" aria-disabled="true">Add Stable Video Link</a>
+          <article class="info-card">
+            <h2>How This Site Helps</h2>
+            <p>
+              Use this page as the hub for stable installs, beta installs,
+              tutorial videos, and direct links to the GitHub repos.
+            </p>
           </article>
-          <article class="tutorial-card">
-            <h3>Beta Install Guide</h3>
-            <p>Use this slot for your beta setup video or release preview.</p>
-            <a class="button secondary" href="#" aria-disabled="true">Add Beta Video Link</a>
-          </article>
-          <article class="tutorial-card">
-            <h3>Panel Overview</h3>
-            <p>Use this slot for a short demo showing the UI, backups, auth, and live server control.</p>
-            <a class="button secondary" href="#" aria-disabled="true">Add Demo Video Link</a>
-          </article>
-        </div>
-      </section>
+        </section>
 
-      <section class="feature-strip">
-        <div>
-          <p class="eyebrow">Highlights</p>
-          <h2>Core Features</h2>
-        </div>
-        <ul class="feature-list">
-          <li>Web panel authentication</li>
-          <li>Optional HTTPS with self-signed certificates</li>
-          <li>Crash recovery and auto restart</li>
-          <li>Backups and restore</li>
-          <li>Version downloads and management</li>
-          <li>Whitelist, ops, and bans management</li>
-          <li>Validation tools and status view</li>
-          <li>Mobile-first hosting through Termux</li>
-        </ul>
-      </section>
+        <section id="channels" class="channel-section">
+          <div class="section-heading">
+            <p class="eyebrow">Channels</p>
+            <h2>Pick Your Release Track</h2>
+          </div>
 
-      <section class="link-panel">
-        <div class="section-heading">
-          <p class="eyebrow">Links</p>
-          <h2>Direct GitHub Access</h2>
-        </div>
-        <div class="link-row spread">
-          <a class="button secondary" href="https://github.com/loaf1ms/DroidMC" target="_blank" rel="noreferrer">Stable GitHub</a>
-          <a class="button secondary" href="https://github.com/wafflebyte8-hue/Droidmc-Beta" target="_blank" rel="noreferrer">Beta GitHub</a>
-          <a class="button secondary" href="https://discord.gg/u6tE8DzS5V" target="_blank" rel="noreferrer">Discord</a>
-        </div>
-      </section>
-    </main>
-  </div>
-</body>
+          <div class="channel-grid">
+            <article class="channel-card stable">
+              <div class="channel-top">
+                <span class="pill">Stable</span>
+                <h3>Stable Release</h3>
+                <p>
+                  Slower updates, cleaner promotion path, better for normal
+                  users who do not want frequent changes.
+                </p>
+              </div>
+              <div class="command-block">
+                <span class="command-label">Install in Termux</span>
+                <code
+                  >curl -fsSL
+                  https://raw.githubusercontent.com/loaf1ms/DroidMC/main/setup.sh
+                  -o setup.sh bash setup.sh</code
+                >
+              </div>
+              <div class="link-row">
+                <a
+                  class="button primary"
+                  href="https://github.com/loaf1ms/DroidMC"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Open Stable Repo</a
+                >
+              </div>
+            </article>
+
+            <article class="channel-card beta">
+              <div class="channel-top">
+                <span class="pill">Beta</span>
+                <h3>Beta Release</h3>
+                <p>
+                  Faster updates, new features first, active testing, and the
+                  place where fixes land before promotion to stable.
+                </p>
+              </div>
+              <div class="command-block">
+                <span class="command-label">Install in Termux</span>
+                <code
+                  >curl -fsSL
+                  https://raw.githubusercontent.com/wafflebyte8-hue/Droidmc-Beta/main/setup.sh
+                  -o setup.sh bash setup.sh</code
+                >
+              </div>
+              <div class="link-row">
+                <a
+                  class="button primary"
+                  href="https://github.com/wafflebyte8-hue/Droidmc-Beta"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Open Beta Repo</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="videos" class="tutorial-section">
+          <div class="section-heading">
+            <p class="eyebrow">Tutorials</p>
+            <h2>Instruction Videos</h2>
+          </div>
+
+          <div class="tutorial-grid">
+            <article class="tutorial-card">
+              <h3>Stable Install Guide</h3>
+              <p>Use this slot for your stable setup video or walkthrough.</p>
+              <a class="button secondary" href="#" aria-disabled="true"
+                >Add Stable Video Link</a
+              >
+            </article>
+            <article class="tutorial-card">
+              <h3>Beta Install Guide</h3>
+              <p>Use this slot for your beta setup video or release preview.</p>
+              <a class="button secondary" href="#" aria-disabled="true"
+                >Add Beta Video Link</a
+              >
+            </article>
+            <article class="tutorial-card">
+              <h3>Panel Overview</h3>
+              <p>
+                Use this slot for a short demo showing the UI, backups, auth,
+                and live server control.
+              </p>
+              <a class="button secondary" href="#" aria-disabled="true"
+                >Add Demo Video Link</a
+              >
+            </article>
+          </div>
+        </section>
+
+        <section class="feature-strip">
+          <div>
+            <p class="eyebrow">Highlights</p>
+            <h2>Core Features</h2>
+          </div>
+          <ul class="feature-list">
+            <li>Web panel authentication</li>
+            <li>Optional HTTPS with self-signed certificates</li>
+            <li>Crash recovery and auto restart</li>
+            <li>Backups and restore</li>
+            <li>Version downloads and management</li>
+            <li>Whitelist, ops, and bans management</li>
+            <li>Validation tools and status view</li>
+            <li>Mobile-first hosting through Termux</li>
+          </ul>
+          <h2>Beta Features</h2>
+          <ul class="feature-list">
+            <li>Bedrock support</li>
+            <li>Cross platform support</li>
+          </ul>
+        </section>
+
+        <section class="link-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Links</p>
+            <h2>Direct GitHub Access</h2>
+          </div>
+          <div class="link-row spread">
+            <a
+              class="button secondary"
+              href="https://github.com/loaf1ms/DroidMC"
+              target="_blank"
+              rel="noreferrer"
+              >Stable GitHub</a
+            >
+            <a
+              class="button secondary"
+              href="https://github.com/wafflebyte8-hue/Droidmc-Beta"
+              target="_blank"
+              rel="noreferrer"
+              >Beta GitHub</a
+            >
+            <a
+              class="button secondary"
+              href="https://discord.gg/u6tE8DzS5V"
+              target="_blank"
+              rel="noreferrer"
+              >Discord</a
+            >
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
